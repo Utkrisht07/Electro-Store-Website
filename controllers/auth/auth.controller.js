@@ -51,7 +51,6 @@ module.exports.register = async (req,res) => {
 
 
 module.exports.index = async (req,res) => {
-    console.log("index");
     const name = req.params.name.split("-").join(" ");
     // db.collection("Users").get()
     // .then(snapShot => {
