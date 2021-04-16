@@ -27,6 +27,10 @@ app.get("/check",(req,res) => {
 app.use("/contact-us",contactRoutes);
 app.use("/",authRoutes);
 
+app.post("/checkout",(req,res) => {
+    res.render("checkout.ejs");
+});
+
 
 
 app.listen(8000,() => {
